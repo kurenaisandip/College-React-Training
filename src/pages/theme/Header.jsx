@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
         <>
          <nav className="navbar">
          <ul className="menu">
-             <li><a href="/home">Home</a></li>
-             <li><a href="/about">About</a></li>
-             <li><a href="/contact">Contact</a></li>
-             <li><a href="/about">About Us</a></li>
-             <li><a href="/login">Login</a></li>
+             <li><Link to="/home">Home</Link></li>
+             <li><Link to="/post">post</Link></li>
+             <li><Link to="/contact">Contact</Link></li>
+            
+             <li><Link to="/login">Login</Link></li>
          </ul>
      </nav>
         </>
-        
     );
-    }
+}
 
-    export default Header;
+export default Header;

@@ -1,6 +1,8 @@
 import SideBar from "./SideBar";
 import Header from "./Header";
 import Footer from "./Footer";
+import Post from "./Post";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
     return (
@@ -12,21 +14,13 @@ const Layout = () => {
 
                 <div className="main-body">
                     <div className="content">
-                        <div className="post">
-                            <h2>Post Title</h2>
-                            <p>Post Content</p>
-                        </div>
-                        <div className="post">
-                            <h2>Post Title</h2>
-                            <p>Post Content</p>
-                        </div>
-                        <div className="post">
-                            <h2>Post Title</h2>
-                            <p>Post Content</p>
-                        </div>
+                        {/* <Post /> */}
+                        <Outlet />
+                       
                     </div>
                     <div className="sidebar">
                         <SideBar />
+                        
                     </div>
                 </div>
                 <div className="footer">
